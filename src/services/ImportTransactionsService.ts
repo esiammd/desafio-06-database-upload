@@ -65,7 +65,7 @@ class ImportTransactionsService {
     });
 
     const existentCategoriesTitles = existentCategories.map(
-      category => category.title,
+      (category: Category) => category.title,
     );
 
     const newCategoriesTitle = categories.filter(
