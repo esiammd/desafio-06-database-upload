@@ -14,8 +14,8 @@ interface Request {
 class CreateTransactionService {
   public async execute({
     title,
-    value,
     type,
+    value,
     category,
   }: Request): Promise<Transaction> {
     if (!['income', 'outcome'].includes(type)) {
